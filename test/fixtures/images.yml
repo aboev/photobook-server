@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image_id: 02099f72-41ed-4585-9f86-35d8923ac20e
+  author_id: 1
+  url_original: http://dev.snufan.com/uploads/9d9d2311-b36b-497f-a27f-a8db44d03fc7_original.jpg
+  url_medium: http://dev.snufan.com/uploads/9d9d2311-b36b-497f-a27f-a8db44d03fc7_original.jpg
+  url_small: http://dev.snufan.com/uploads/9d9d2311-b36b-497f-a27f-a8db44d03fc7_original.jpg
+  aspect_ratio: 1.5
+  timestamp: 1
+
+two:
+  image_id: MyString
+  author_id: MyString
+  url_original: MyString
+  url_medium: MyString
+  url_small: MyString
+  aspect_ratio: 1.5
+  timestamp: 1

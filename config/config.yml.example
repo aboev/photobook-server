@@ -1,0 +1,32 @@
+defaults: &defaults
+  server_prefix: http://dev.snufan.com
+
+  s3_access_key_id: [aws s3 access key id]
+  s3_secret_access_key: [aws s3 secret access key]
+  s3_region: [aws s3 region name]
+  s3_bucket: [aws s3 bucket name - for image upload]
+  s3_prefix: upload
+
+  dropbox_access_token: [dropbox access token - optional]
+
+  google_api_key: [google api key for push notifications]
+
+  smsc_login: [login for smsc.ru]
+  smsc_pw: [password for smsc.ru]
+
+  demo_acct_id: [demo account public id]
+
+  ENABLE_PUSH: 1
+  ENABLE_S3: 1
+  ENABLE_SMS: 1
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  ENABLE_PUSH: 0
+  ENABLE_S3: 0
+  ENABLE_SMS: 0
+
+production:
+  <<: *defaults

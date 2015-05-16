@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  private_id:
+  contact_key: +821011112222
+  enc_profile: User.encrypt_profile('{}', :key => APP_CONFIG['db_enc_key'])
+  pushid: APA91bF1On1Q_y9dZnVdC7YFBn_2OmwgVjVvwkh9py3wU011yElnT1jagfGbs75Rn4cvCyksgAaPLR0UDjQ7xb1a48gR-KAXJvllE2QHqJ0MEbeSzPhsYnYfYBOS_3OVtWEdyXyud1OKDzp1pSZSAUMB6_0w71Pn68sOvffuLai8R8-acFXl0UI
+  smscode: 1234
+
+two:
+  id: 2
+  private_id:
+  contact_key: nature_channel
+  enc_profile: User.encrypt_profile('{"name":"Nature Channel"}', :key => APP_CONFIG['db_enc_key'])
+  utype: 1
+  pushid:
+  smscode: 1234
