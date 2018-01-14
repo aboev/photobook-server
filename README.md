@@ -23,4 +23,4 @@ rails server
 
 ### Beginner's guide
 
-Refer to install.sh (Step-by-step for Ubuntu 14.04)
+Refer to [install.sh](https://github.com/aboev/photobook-server/blob/master/install.sh) (Step-by-step for Ubuntu 14.04)
