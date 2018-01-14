@@ -20,3 +20,7 @@ bundle install
 QUEUE=* rake environment resque:work
 rails server
 ```
+
+### Beginner's guide
+
+Refer to install.sh (Step-by-step for Ubuntu 14.04)
