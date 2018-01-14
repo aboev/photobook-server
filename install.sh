@@ -47,3 +47,5 @@ rake db:setup RAILS_ENV=test
 
 rake test
 
+QUEUE=* rake environment resque:work
+rails server
