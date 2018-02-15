@@ -1,0 +1,30 @@
+version: '2'
+services:
+  redis:
+    image: aboev/photobook-redis
+    ports:
+      - '6379'
+  postgres:
+    image: aboev/photobook-postgre
+    ports:
+      - '5432'
+  resque:
+    image: aboev/photobook-resque
+    depends_on:
+      - redis
+    links:
+      - redis
+    volumes:
+      - ./config/config.yml:/home/photobook-server/config/config.yml
+  photobook:
+    image: aboev/photobook-server
+    depends_on:
+      - resque
+      - redis
+      - postgres
+    links:
+      - redis
+      - postgres
+      - resque
+    volumes:
+      - ./config/config.yml:/home/photobook-server/config/config.yml
