@@ -9,7 +9,8 @@ Photobook is an image sharing social service. You can express your feelings, emo
 
 ### Setup guide
 You may deploy server in docker container or install manually (requires some ruby/rails experience).
-#### Docker (recommended)
+#### Docker setup (Recommended)
+![alt text](https://www.docker.com/sites/default/files/horizontal.png)
 
 Photobook supports cloud storage, push notifications and sms verification.
 You may optionally select required features. If cloud storage is not configured, images are hosted locally.
