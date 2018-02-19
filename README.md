@@ -17,14 +17,18 @@ You may optionally select required features. If cloud storage is not configured,
 
 1. Register [aws web services](http://aws.amazon.com) account, activate S3 storage and get AccessKeyID/SecretAccessKey (for S3 cloud storage)
 2. Register [google developer](https://console.developers.google.com/) account, activate google cloud messaging API and get GoogleApiKey (for push notifications)
-3. Register sms gateway account and get login/pw (for sms verification)
+3. Register [smsc](http://www.smsc.ru) account and get login/pw or implement your custom gateway in lib/sms.sh (for sms verification)
 4. Rename config/config.yml.example -> config/config.yml and replace config values in square brackets
-5. Deploy server in docker container
+5. Install docker-compose (Follow instructions on [docker website](https://docs.docker.com/compose/install/))
 ```
-sudo apt-get install docker-compose
+sudo apt-get install docker-compose (Ubuntu 16.04)
+```
+6. Deploy server in docker container
+```
 docker-compose run -p 80:80 -d photobook
 ```
-Now, your server will be available on port 80.
+Now, your server will be available on port 80. 
+Tune up the endpoint on client side and you are ready to go! 
 
 #### Manual setup
 
