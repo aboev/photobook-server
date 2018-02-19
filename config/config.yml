@@ -11,8 +11,9 @@ defaults: &defaults
 
   google_api_key: [google api key for push notifications]
 
-  smsc_login: [login for smsc.ru]
-  smsc_pw: [password for smsc.ru]
+  smsc_login: [login for smsc.ru, skip for custom gateway]
+  smsc_pw: [password for smsc.ru, skip for custom gateway]
+  sms_gate: [0 - for smsc.ru, 1 - for custom gateway (implement in lib/sms.sh)]
 
   demo_acct_id: [demo account public id]
 

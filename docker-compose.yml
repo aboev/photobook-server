@@ -28,3 +28,4 @@ services:
       - resque
     volumes:
       - ./config/config.yml:/home/photobook-server/config/config.yml
+      - ./lib/sms.sh:/home/photobook-server/lib/sms.sh
