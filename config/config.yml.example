@@ -3,7 +3,7 @@ defaults: &defaults
 
   s3_access_key_id: [aws s3 access key id]
   s3_secret_access_key: [aws s3 secret access key]
-  s3_region: [aws s3 region name]
+  s3_region: [aws s3 region name, ex. us-east-1]
   s3_bucket: [aws s3 bucket name - for image upload]
   s3_prefix: upload
 
@@ -14,6 +14,8 @@ defaults: &defaults
   smsc_login: [login for smsc.ru, skip for custom gateway]
   smsc_pw: [password for smsc.ru, skip for custom gateway]
   sms_gate: [0 - for smsc.ru, 1 - for custom gateway (implement in lib/sms.sh)]
+
+  db_enc_key: [random DB encryption key]
 
   demo_acct_id: [demo account public id]
 
